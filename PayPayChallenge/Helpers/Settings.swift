@@ -9,7 +9,7 @@
 
 class GlobalSettings {
     static let shared = GlobalSettings()
-     let ratesExchangeApiKey = "393d7e91eea017841fc9bf9fe784e94f"
+     let ratesExchangeApiKey = "3"
 }
 
 struct Routes {
