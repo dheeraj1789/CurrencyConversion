@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F266CD392271E43400FA3AF4 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266CD382271E43400FA3AF4 /* AppDependency.swift */; };
+		F2952E5C227180F100EF08BE /* CoreDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2952E5B227180F100EF08BE /* CoreDataOperation.swift */; };
+		F2952E622271BAE500EF08BE /* CountryRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2952E612271BAE500EF08BE /* CountryRate.swift */; };
+		F2A73E28227090CF00509A44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73E27227090CF00509A44 /* AppDelegate.swift */; };
+		F2A73E2D227090CF00509A44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A73E2B227090CF00509A44 /* Main.storyboard */; };
+		F2A73E30227090CF00509A44 /* PayPayChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2A73E2E227090CF00509A44 /* PayPayChallenge.xcdatamodeld */; };
+		F2A73E32227090DD00509A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A73E31227090DD00509A44 /* Assets.xcassets */; };
+		F2A73E35227090DD00509A44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A73E33227090DD00509A44 /* LaunchScreen.storyboard */; };
+		F2A73E40227090DD00509A44 /* PayPayChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73E3F227090DD00509A44 /* PayPayChallengeTests.swift */; };
+		F2A73E4B227090DD00509A44 /* PayPayChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73E4A227090DD00509A44 /* PayPayChallengeUITests.swift */; };
+		F2A73E782270944000509A44 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73E602270944000509A44 /* Settings.swift */; };
+		F2A73E7A2270944000509A44 /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73E632270944000509A44 /* ApiHandler.swift */; };
+		F2A73E822270944000509A44 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73E6D2270944000509A44 /* Currency.swift */; };
+		F2A73EC72270ADAB00509A44 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73EC52270ADAB00509A44 /* ConverterViewController.swift */; };
+		F2A73EC82270ADAB00509A44 /* CurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73EC62270ADAB00509A44 /* CurrencyListViewController.swift */; };
+		F2A73EEC2270AFE900509A44 /* ConverterLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73ECD2270AFE900509A44 /* ConverterLocalDataManager.swift */; };
+		F2A73EEE2270AFE900509A44 /* ConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73ED12270AFE900509A44 /* ConverterPresenter.swift */; };
+		F2A73EEF2270AFE900509A44 /* ConverterWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73ED32270AFE900509A44 /* ConverterWireFrame.swift */; };
+		F2A73EF12270AFE900509A44 /* ConverterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73ED72270AFE900509A44 /* ConverterProtocols.swift */; };
+		F2A73EF22270AFE900509A44 /* ConverterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73ED92270AFE900509A44 /* ConverterItem.swift */; };
+		F2A73EF32270AFE900509A44 /* ConverterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73EDA2270AFE900509A44 /* ConverterInteractor.swift */; };
+		F2A73EF42270AFE900509A44 /* CurrencyListLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73EDE2270AFE900509A44 /* CurrencyListLocalDataManager.swift */; };
+		F2A73EF62270AFE900509A44 /* CurrencyListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73EE22270AFE900509A44 /* CurrencyListPresenter.swift */; };
+		F2A73EF72270AFE900509A44 /* CurrencyListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73EE42270AFE900509A44 /* CurrencyListWireFrame.swift */; };
+		F2A73EF92270AFE900509A44 /* CurrencyListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73EE82270AFE900509A44 /* CurrencyListProtocols.swift */; };
+		F2A73EFA2270AFE900509A44 /* CurrencyListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73EEA2270AFE900509A44 /* CurrencyListItem.swift */; };
+		F2A73EFB2270AFE900509A44 /* CurrencyListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A73EEB2270AFE900509A44 /* CurrencyListInteractor.swift */; };
+		F2F1FB172272F56300443ED1 /* AppWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F1FB162272F56300443ED1 /* AppWireFrame.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2A73E3C227090DD00509A44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2A73E1C227090CF00509A44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2A73E23227090CF00509A44;
+			remoteInfo = PayPayChallenge;
+		};
+		F2A73E47227090DD00509A44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2A73E1C227090CF00509A44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2A73E23227090CF00509A44;
+			remoteInfo = PayPayChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F266CD382271E43400FA3AF4 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		F2952E5B227180F100EF08BE /* CoreDataOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataOperation.swift; sourceTree = "<group>"; };
+		F2952E612271BAE500EF08BE /* CountryRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryRate.swift; sourceTree = "<group>"; };
+		F2A73E24227090CF00509A44 /* PayPayChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayPayChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A73E27227090CF00509A44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2A73E2C227090CF00509A44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2A73E2F227090CF00509A44 /* PayPayChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PayPayChallenge.xcdatamodel; sourceTree = "<group>"; };
+		F2A73E31227090DD00509A44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2A73E34227090DD00509A44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2A73E36227090DD00509A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A73E3B227090DD00509A44 /* PayPayChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayPayChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A73E3F227090DD00509A44 /* PayPayChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPayChallengeTests.swift; sourceTree = "<group>"; };
+		F2A73E41227090DD00509A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A73E46227090DD00509A44 /* PayPayChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayPayChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A73E4A227090DD00509A44 /* PayPayChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPayChallengeUITests.swift; sourceTree = "<group>"; };
+		F2A73E4C227090DD00509A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A73E602270944000509A44 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		F2A73E632270944000509A44 /* ApiHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
+		F2A73E6D2270944000509A44 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		F2A73EC52270ADAB00509A44 /* ConverterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		F2A73EC62270ADAB00509A44 /* CurrencyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyListViewController.swift; sourceTree = "<group>"; };
+		F2A73ECD2270AFE900509A44 /* ConverterLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterLocalDataManager.swift; sourceTree = "<group>"; };
+		F2A73ED12270AFE900509A44 /* ConverterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterPresenter.swift; sourceTree = "<group>"; };
+		F2A73ED32270AFE900509A44 /* ConverterWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterWireFrame.swift; sourceTree = "<group>"; };
+		F2A73ED72270AFE900509A44 /* ConverterProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterProtocols.swift; sourceTree = "<group>"; };
+		F2A73ED92270AFE900509A44 /* ConverterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterItem.swift; sourceTree = "<group>"; };
+		F2A73EDA2270AFE900509A44 /* ConverterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterInteractor.swift; sourceTree = "<group>"; };
+		F2A73EDE2270AFE900509A44 /* CurrencyListLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyListLocalDataManager.swift; sourceTree = "<group>"; };
+		F2A73EE22270AFE900509A44 /* CurrencyListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyListPresenter.swift; sourceTree = "<group>"; };
+		F2A73EE42270AFE900509A44 /* CurrencyListWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyListWireFrame.swift; sourceTree = "<group>"; };
+		F2A73EE82270AFE900509A44 /* CurrencyListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyListProtocols.swift; sourceTree = "<group>"; };
+		F2A73EEA2270AFE900509A44 /* CurrencyListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyListItem.swift; sourceTree = "<group>"; };
+		F2A73EEB2270AFE900509A44 /* CurrencyListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyListInteractor.swift; sourceTree = "<group>"; };
+		F2F1FB162272F56300443ED1 /* AppWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppWireFrame.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2A73E21227090CF00509A44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A73E38227090DD00509A44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A73E43227090DD00509A44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F266CD372271E40700FA3AF4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F2F1FB162272F56300443ED1 /* AppWireFrame.swift */,
+				F2A73E27227090CF00509A44 /* AppDelegate.swift */,
+				F266CD382271E43400FA3AF4 /* AppDependency.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F2952E5A227180C500EF08BE /* CoreDataClass */ = {
+			isa = PBXGroup;
+			children = (
+				F2952E5B227180F100EF08BE /* CoreDataOperation.swift */,
+			);
+			path = CoreDataClass;
+			sourceTree = "<group>";
+		};
+		F2A73E1B227090CF00509A44 = {
+			isa = PBXGroup;
+			children = (
+				F2A73E26227090CF00509A44 /* PayPayChallenge */,
+				F2A73E3E227090DD00509A44 /* PayPayChallengeTests */,
+				F2A73E49227090DD00509A44 /* PayPayChallengeUITests */,
+				F2A73E25227090CF00509A44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2A73E25227090CF00509A44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73E24227090CF00509A44 /* PayPayChallenge.app */,
+				F2A73E3B227090DD00509A44 /* PayPayChallengeTests.xctest */,
+				F2A73E46227090DD00509A44 /* PayPayChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2A73E26227090CF00509A44 /* PayPayChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				F266CD372271E40700FA3AF4 /* App */,
+				F2952E5A227180C500EF08BE /* CoreDataClass */,
+				F2A73EC92270AF8F00509A44 /* PresenterInteractor */,
+				F2A73E5F2270944000509A44 /* Helpers */,
+				F2A73E6C2270944000509A44 /* Models */,
+				F2A73E622270944000509A44 /* Network */,
+				F2A73E2B227090CF00509A44 /* Main.storyboard */,
+				F2A73E31227090DD00509A44 /* Assets.xcassets */,
+				F2A73E33227090DD00509A44 /* LaunchScreen.storyboard */,
+				F2A73E36227090DD00509A44 /* Info.plist */,
+				F2A73E2E227090CF00509A44 /* PayPayChallenge.xcdatamodeld */,
+			);
+			path = PayPayChallenge;
+			sourceTree = "<group>";
+		};
+		F2A73E3E227090DD00509A44 /* PayPayChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73E3F227090DD00509A44 /* PayPayChallengeTests.swift */,
+				F2A73E41227090DD00509A44 /* Info.plist */,
+			);
+			path = PayPayChallengeTests;
+			sourceTree = "<group>";
+		};
+		F2A73E49227090DD00509A44 /* PayPayChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73E4A227090DD00509A44 /* PayPayChallengeUITests.swift */,
+				F2A73E4C227090DD00509A44 /* Info.plist */,
+			);
+			path = PayPayChallengeUITests;
+			sourceTree = "<group>";
+		};
+		F2A73E5F2270944000509A44 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73E602270944000509A44 /* Settings.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F2A73E622270944000509A44 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73E632270944000509A44 /* ApiHandler.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F2A73E6C2270944000509A44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2952E612271BAE500EF08BE /* CountryRate.swift */,
+				F2A73E6D2270944000509A44 /* Currency.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F2A73EC92270AF8F00509A44 /* PresenterInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73ECA2270AFE900509A44 /* Converter */,
+				F2A73EDB2270AFE900509A44 /* CurrencyList */,
+			);
+			path = PresenterInteractor;
+			sourceTree = "<group>";
+		};
+		F2A73ECA2270AFE900509A44 /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73ECB2270AFE900509A44 /* DataManager */,
+				F2A73ED02270AFE900509A44 /* Presenter */,
+				F2A73ED22270AFE900509A44 /* WireFrame */,
+				F2A73ED42270AFE900509A44 /* View */,
+				F2A73ED62270AFE900509A44 /* Protocols */,
+				F2A73ED82270AFE900509A44 /* Interactor */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		F2A73ECB2270AFE900509A44 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73ECC2270AFE900509A44 /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		F2A73ECC2270AFE900509A44 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73ECD2270AFE900509A44 /* ConverterLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		F2A73ED02270AFE900509A44 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73ED12270AFE900509A44 /* ConverterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F2A73ED22270AFE900509A44 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73ED32270AFE900509A44 /* ConverterWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		F2A73ED42270AFE900509A44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73EC52270ADAB00509A44 /* ConverterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2A73ED62270AFE900509A44 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73ED72270AFE900509A44 /* ConverterProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F2A73ED82270AFE900509A44 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73ED92270AFE900509A44 /* ConverterItem.swift */,
+				F2A73EDA2270AFE900509A44 /* ConverterInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F2A73EDB2270AFE900509A44 /* CurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73EDC2270AFE900509A44 /* DataManager */,
+				F2A73EE12270AFE900509A44 /* Presenter */,
+				F2A73EE32270AFE900509A44 /* WireFrame */,
+				F2A73EE52270AFE900509A44 /* View */,
+				F2A73EE72270AFE900509A44 /* Protocols */,
+				F2A73EE92270AFE900509A44 /* Interactor */,
+			);
+			path = CurrencyList;
+			sourceTree = "<group>";
+		};
+		F2A73EDC2270AFE900509A44 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73EDD2270AFE900509A44 /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		F2A73EDD2270AFE900509A44 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73EDE2270AFE900509A44 /* CurrencyListLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		F2A73EE12270AFE900509A44 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73EE22270AFE900509A44 /* CurrencyListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F2A73EE32270AFE900509A44 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73EE42270AFE900509A44 /* CurrencyListWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		F2A73EE52270AFE900509A44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73EC62270ADAB00509A44 /* CurrencyListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2A73EE72270AFE900509A44 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73EE82270AFE900509A44 /* CurrencyListProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F2A73EE92270AFE900509A44 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F2A73EEA2270AFE900509A44 /* CurrencyListItem.swift */,
+				F2A73EEB2270AFE900509A44 /* CurrencyListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2A73E23227090CF00509A44 /* PayPayChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2A73E4F227090DD00509A44 /* Build configuration list for PBXNativeTarget "PayPayChallenge" */;
+			buildPhases = (
+				F2A73E20227090CF00509A44 /* Sources */,
+				F2A73E21227090CF00509A44 /* Frameworks */,
+				F2A73E22227090CF00509A44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PayPayChallenge;
+			productName = PayPayChallenge;
+			productReference = F2A73E24227090CF00509A44 /* PayPayChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2A73E3A227090DD00509A44 /* PayPayChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2A73E52227090DD00509A44 /* Build configuration list for PBXNativeTarget "PayPayChallengeTests" */;
+			buildPhases = (
+				F2A73E37227090DD00509A44 /* Sources */,
+				F2A73E38227090DD00509A44 /* Frameworks */,
+				F2A73E39227090DD00509A44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2A73E3D227090DD00509A44 /* PBXTargetDependency */,
+			);
+			name = PayPayChallengeTests;
+			productName = PayPayChallengeTests;
+			productReference = F2A73E3B227090DD00509A44 /* PayPayChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2A73E45227090DD00509A44 /* PayPayChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2A73E55227090DD00509A44 /* Build configuration list for PBXNativeTarget "PayPayChallengeUITests" */;
+			buildPhases = (
+				F2A73E42227090DD00509A44 /* Sources */,
+				F2A73E43227090DD00509A44 /* Frameworks */,
+				F2A73E44227090DD00509A44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2A73E48227090DD00509A44 /* PBXTargetDependency */,
+			);
+			name = PayPayChallengeUITests;
+			productName = PayPayChallengeUITests;
+			productReference = F2A73E46227090DD00509A44 /* PayPayChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2A73E1C227090CF00509A44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Dheeraj Kumar";
+				TargetAttributes = {
+					F2A73E23227090CF00509A44 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					F2A73E3A227090DD00509A44 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = F2A73E23227090CF00509A44;
+					};
+					F2A73E45227090DD00509A44 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = F2A73E23227090CF00509A44;
+					};
+				};
+			};
+			buildConfigurationList = F2A73E1F227090CF00509A44 /* Build configuration list for PBXProject "PayPayChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2A73E1B227090CF00509A44;
+			productRefGroup = F2A73E25227090CF00509A44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2A73E23227090CF00509A44 /* PayPayChallenge */,
+				F2A73E3A227090DD00509A44 /* PayPayChallengeTests */,
+				F2A73E45227090DD00509A44 /* PayPayChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2A73E22227090CF00509A44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A73E35227090DD00509A44 /* LaunchScreen.storyboard in Resources */,
+				F2A73E32227090DD00509A44 /* Assets.xcassets in Resources */,
+				F2A73E2D227090CF00509A44 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A73E39227090DD00509A44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A73E44227090DD00509A44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2A73E20227090CF00509A44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A73EF12270AFE900509A44 /* ConverterProtocols.swift in Sources */,
+				F2952E5C227180F100EF08BE /* CoreDataOperation.swift in Sources */,
+				F2A73EF92270AFE900509A44 /* CurrencyListProtocols.swift in Sources */,
+				F2A73EC72270ADAB00509A44 /* ConverterViewController.swift in Sources */,
+				F2A73EF32270AFE900509A44 /* ConverterInteractor.swift in Sources */,
+				F2A73EFB2270AFE900509A44 /* CurrencyListInteractor.swift in Sources */,
+				F2A73EC82270ADAB00509A44 /* CurrencyListViewController.swift in Sources */,
+				F2A73EF42270AFE900509A44 /* CurrencyListLocalDataManager.swift in Sources */,
+				F2F1FB172272F56300443ED1 /* AppWireFrame.swift in Sources */,
+				F2A73EF72270AFE900509A44 /* CurrencyListWireFrame.swift in Sources */,
+				F2A73EF62270AFE900509A44 /* CurrencyListPresenter.swift in Sources */,
+				F2A73EFA2270AFE900509A44 /* CurrencyListItem.swift in Sources */,
+				F2A73E28227090CF00509A44 /* AppDelegate.swift in Sources */,
+				F2A73EEE2270AFE900509A44 /* ConverterPresenter.swift in Sources */,
+				F2A73EF22270AFE900509A44 /* ConverterItem.swift in Sources */,
+				F2A73E822270944000509A44 /* Currency.swift in Sources */,
+				F266CD392271E43400FA3AF4 /* AppDependency.swift in Sources */,
+				F2A73E30227090CF00509A44 /* PayPayChallenge.xcdatamodeld in Sources */,
+				F2A73E7A2270944000509A44 /* ApiHandler.swift in Sources */,
+				F2A73EEC2270AFE900509A44 /* ConverterLocalDataManager.swift in Sources */,
+				F2A73E782270944000509A44 /* Settings.swift in Sources */,
+				F2A73EEF2270AFE900509A44 /* ConverterWireFrame.swift in Sources */,
+				F2952E622271BAE500EF08BE /* CountryRate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A73E37227090DD00509A44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A73E40227090DD00509A44 /* PayPayChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A73E42227090DD00509A44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A73E4B227090DD00509A44 /* PayPayChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2A73E3D227090DD00509A44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2A73E23227090CF00509A44 /* PayPayChallenge */;
+			targetProxy = F2A73E3C227090DD00509A44 /* PBXContainerItemProxy */;
+		};
+		F2A73E48227090DD00509A44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2A73E23227090CF00509A44 /* PayPayChallenge */;
+			targetProxy = F2A73E47227090DD00509A44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2A73E2B227090CF00509A44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2A73E2C227090CF00509A44 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2A73E33227090DD00509A44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2A73E34227090DD00509A44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2A73E4D227090DD00509A44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2A73E4E227090DD00509A44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2A73E50227090DD00509A44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A8NVT93Q59;
+				INFOPLIST_FILE = PayPayChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paypay.converter.PayPayChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2A73E51227090DD00509A44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A8NVT93Q59;
+				INFOPLIST_FILE = PayPayChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paypay.converter.PayPayChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F2A73E53227090DD00509A44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A8NVT93Q59;
+				INFOPLIST_FILE = PayPayChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paypay.converter.PayPayChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PayPayChallenge.app/PayPayChallenge";
+			};
+			name = Debug;
+		};
+		F2A73E54227090DD00509A44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A8NVT93Q59;
+				INFOPLIST_FILE = PayPayChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paypay.converter.PayPayChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PayPayChallenge.app/PayPayChallenge";
+			};
+			name = Release;
+		};
+		F2A73E56227090DD00509A44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A8NVT93Q59;
+				INFOPLIST_FILE = PayPayChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paypay.converter.PayPayChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PayPayChallenge;
+			};
+			name = Debug;
+		};
+		F2A73E57227090DD00509A44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A8NVT93Q59;
+				INFOPLIST_FILE = PayPayChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paypay.converter.PayPayChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PayPayChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2A73E1F227090CF00509A44 /* Build configuration list for PBXProject "PayPayChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2A73E4D227090DD00509A44 /* Debug */,
+				F2A73E4E227090DD00509A44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2A73E4F227090DD00509A44 /* Build configuration list for PBXNativeTarget "PayPayChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2A73E50227090DD00509A44 /* Debug */,
+				F2A73E51227090DD00509A44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2A73E52227090DD00509A44 /* Build configuration list for PBXNativeTarget "PayPayChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2A73E53227090DD00509A44 /* Debug */,
+				F2A73E54227090DD00509A44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2A73E55227090DD00509A44 /* Build configuration list for PBXNativeTarget "PayPayChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2A73E56227090DD00509A44 /* Debug */,
+				F2A73E57227090DD00509A44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F2A73E2E227090CF00509A44 /* PayPayChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F2A73E2F227090CF00509A44 /* PayPayChallenge.xcdatamodel */,
+			);
+			currentVersion = F2A73E2F227090CF00509A44 /* PayPayChallenge.xcdatamodel */;
+			path = PayPayChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F2A73E1C227090CF00509A44 /* Project object */;
+}
